@@ -1,0 +1,5 @@
+[tool.pyscript]
+name = "coffee-machine"
+
+[[tool.pyscript.files]]
+from = "main.py"
