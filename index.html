@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Machine ☕</title>
+  <link rel="stylesheet" href="https://pyscript.net/releases/2024.9.1/core.css">
+  <script type="module" src="https://pyscript.net/releases/2024.9.1/core.js"></script>
+  <style>
+    body {
+      background-color: black;
+      color: lime;
+      font-family: monospace;
+      padding: 20px;
+    }
+    button {
+      background-color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    #terminal {
+      margin-top: 20px;
+      border: 1px solid lime;
+      padding: 10px;
+      height: 400px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+    }
+    #inputBox {
+      margin-top: 10px;
+      width: 300px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>☕ Coffee Machine Simulator</h2>
+<p>Click <button id="runBtn">Run</button> to start the machine.</p>
+
+<div id="terminal"></div>
+<input id="inputBox" placeholder="Type your input here..." disabled />
+<button id="sendBtn" disabled>Send</button>
+
+<py-config>
+    [[fetch]]
+    files = ["main.py"]
+</py-config>
+
+<py-script src="main.py"></py-script>
+
+</body>
+</html>
